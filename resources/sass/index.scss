@@ -1,0 +1,34 @@
+* {
+    list-style: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(160, 211, 160, 0.616);
+}
+.create-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-ttl {
+    text-align: center;
+}
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-btn,
+.modify-btn
+{
+    width: 100px;
+}
+
