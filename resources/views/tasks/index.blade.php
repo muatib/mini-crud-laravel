@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <h1 class="main-ttl">Liste des tâches</h1>
+    <h1 class="ttl">Liste des tâches</h1>
 
     @if(count($tasks) > 0)
     <div class="create-container">
         <ul >
             @foreach($tasks as $task)
-            <li>
+           
+            <li >
                 {{ $task->title }} - {{ $task->description }}
 
                 <form  action="{{ route('tasks.destroy', $task->id) }}" method="POST">
@@ -30,6 +31,7 @@
             </li>
             <a href="{{ route('tasks.edit', $task->id) }}"> <button class="modify-btn btn">Modifier</button> </a>
             @endforeach
+        
 
         </ul>
         @else

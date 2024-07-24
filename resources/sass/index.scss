@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.main-ttl {
+.ttl {
     text-align: center;
 }
 .btn {
@@ -24,11 +24,14 @@ body {
     border-radius: 50px;
     cursor: pointer;
     border: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .delete-btn,
 .modify-btn
 {
     width: 100px;
+   
 }
 

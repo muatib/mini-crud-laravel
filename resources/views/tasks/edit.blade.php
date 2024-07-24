@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier la tâche</title>
+    @vite('resources/sass/index.scss')
 </head>
 <body>
-    <h1>Modifier la tâche</h1>
+    <h1 class="ttl">Modifier la tâche</h1>
 
     <form action="{{ route('tasks.update', $task->id) }}" method="POST">
         @csrf
@@ -18,7 +19,7 @@
         <label for="description">Description:</label>
         <textarea id="description" name="description">{{ $task->description }}</textarea><br><br>
 
-        <button type="submit">Enregistrer les modifications</button>
+        <button class="btn" type="submit">Enregistrer les modifications</button>
     </form>
 </body>
 </html>

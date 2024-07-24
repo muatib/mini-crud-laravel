@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer une nouvelle tâche</title>
-    
+    @vite('resources/sass/index.scss')
 </head>
 <body>
-    <h1>Créer une nouvelle tâche</h1>
+    <h1 class="ttl">Créer une nouvelle tâche</h1>
 
     <form action="{{ route('tasks.store') }}" method="POST">
         @csrf
@@ -17,11 +17,11 @@
         <label for="description">Description:</label>
         <textarea id="description" name="description"></textarea><br><br>
 
-        <button type="submit">Créer</button>
+        <button class="btn" type="submit">Créer une tache</button>
     </form>
 
     <a href="{{ route('tasks.index') }}">
-        <button>Afficher les tâches</button>
+        <button class="btn">Afficher les tâches</button>
     </a>
 </body>
 </html>
